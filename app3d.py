@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Mostrar el logo de TREDIX
-st.image("tredix_logo.jpg", width=150)
+st.image("logo.png", width=150)
 
 # Título centrado con estilo
 st.markdown(
