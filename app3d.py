@@ -1,9 +1,9 @@
 import streamlit as st
 
-# Mostrar el logo de TREDIX
-st.image("logo.png", width=150)
+# Mostrar logo centrado
+st.image("logo.png", width=200)
 
-# Título centrado con estilo
+# Título con estilo
 st.markdown(
     "<h1 style='text-align: center; color: #33CCCC;'>Calculadora 3D - TREDIX</h1>",
     unsafe_allow_html=True
@@ -11,10 +11,10 @@ st.markdown(
 
 st.markdown("---")
 
-# Entrada de datos
+# Entrada
 gramos = st.number_input("🔧 Ingresá el peso del objeto en gramos", min_value=1)
 
-# Botones en columnas
+# Botones y cálculo
 col1, col2 = st.columns(2)
 
 with col1:
@@ -27,7 +27,7 @@ with col2:
         precio = gramos * 15 * 2 * 5
         st.success(f"🧾 Precio sugerido: **${precio}**")
 
-# Footer opcional
+# Footer
 st.markdown("---")
 st.markdown(
     "<small style='text-align: center; display: block;'>Desarrollado por TREDIX - 2025</small>",
