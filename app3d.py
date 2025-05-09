@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Mostrar logo centrado
-st.image("logo.png", width=1000)
+st.image("logo.png", width=600)
 
 # Título con estilo
 st.markdown(
